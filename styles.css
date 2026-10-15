@@ -1,0 +1,170 @@
+/* importing fonts */
+@font-face {
+    font-family: 'League Spartan';
+    src: url("LeagueSpartan-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url("GlacialIndifference-Regular.otf") format("opentype");
+}
+
+:root {
+    --purple: #4c3260;
+    --purple-rgb: 76, 50, 96;
+    --light-purple: #b497ce;
+    --light-purple-rbg: 180, 151, 206;
+    --text-color: #545454;
+}
+
+body {
+    font-family: "Glacial Indifference";
+}
+
+.navbar {
+    background-color: var(--purple);
+    font-family: "Glacial Indifference";
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    --bs-navbar-toggler-focus-width: 0;
+}
+
+.navbar-brand, .nav-link {
+    color: white;
+    --bs-nav-link-hover-color: var(--light-purple);
+    --bs-navbar-brand-hover-color: var(--light-purple);
+    --bs-navbar-active-color: var(--light-purple);
+}
+
+.logo-color {
+    color: var(--light-purple);
+}
+
+.navbar img {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.navbar-toggler {
+    border: none
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+
+.footer{
+    background-color: var(--purple);
+    color: white;
+}
+
+.card-title{
+    background-color: var(--light-purple);
+    color: white;
+}
+
+.card {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.carousel-item {
+    max-height: calc(100vh - 58px)
+}
+
+h1, h2, h3 {
+    color: var(--purple);
+}
+
+.accordion-button {
+    font-size: 1.25rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(var(--light-purple-rbg), 0.5);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+#web-development{
+    margin-top: 200px;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--light-purple);
+    --bs-btn-hover-bg: var(--purple);
+    border: none;
+    --bs-btn-disabled-bg: var(--light-purple);
+    --bs-btn-disabled-border-color: none;
+}
+
+.workshops .card {
+    padding-top: 0.75rem;
+}
+
+.registration-Closed {
+    font-weight: bold
+}
+
+.link {
+    color: var(--light-purple);
+}
+
+.link:visited {
+    color: var(--purple);
+}
+
+body {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    background-color: var(--light-purple);
+    .wrapper {
+        background-color: white;
+    }
+}
+
+.section-to-hide{
+    display: none;
+}
+
+/* margin on large screens */
+@media (min-width: 1400px) {
+    body {
+        padding-left: 1in;
+        padding-right: 1in;
+        background-color: var(--light-purple);
+    }
+    .wrapper {
+        background-color: white;
+    }
+}
+
+#clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv>div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #d3b7e9;
+    display: inline-block;
+}
+
+#clockdiv div>span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #9473ad;
+    display: inline-block;
+}
+
+/* Style for visible text */
+.smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+}
